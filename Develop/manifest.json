@@ -45,8 +45,8 @@
 
     ],
     "background_color": "#01579b",
-    "theme_color": "#ffffff"
-    // "start_url": ,
-    // "display": 
+    "theme_color": "#ffffff",
+    "start_url": "./index.html",
+    "display": "fullscreen"
 
 }
