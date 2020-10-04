@@ -6,7 +6,7 @@ const request = indexedDB.open('budget_app', 1);
 // this event will happen if the db version changes
 request.onupgradeneeded = function(event) {
     // save a reference to the db
-    const db = event.target.result;
+    var db = event.target.result;
     // create the object store to hold data
     // and auto increment primary key of sorts
     db.createObjectStore('new_budget', { autoIncrement: true });
@@ -32,7 +32,7 @@ request.onupgradeneeded = function(event) {
 
 // this function will happen if we attempt to submit new data
 // but there is no internet
-function saveBudget(record) {
+function saveRecord(record) {
     // start new transaction with the db to read and write permissions
     const transaction = db.transaction(['new_budget'], 'readwrite');
 
