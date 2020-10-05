@@ -9,4 +9,4 @@ Use this app to keep track of your transactions both on and offline. Any offline
 
 
 ## Link:
-[Deployed App]
+[Deployed App](https://protected-falls-61512.herokuapp.com/)
